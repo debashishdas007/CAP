@@ -16,13 +16,14 @@ annotate SalesService.A_SalesOrder with @(UI : {
     LineItem                             : [
         {
             $Type : 'UI.DataField',
-            Value : SalesOrder
+            Value : SalesOrder,
+            ![@UI.Importance] : #High,
         },
         {Value : SalesOrderType},
         {Value : SoldToParty},
         {Value : SalesOrganization},
         {Value : DistributionChannel},
-        {Value : TotalNetAmount},
+        {Value : TotalNetAmount, Criticality: 0 }
     ],
 
     HeaderFacets                         : [{

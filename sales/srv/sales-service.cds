@@ -2,7 +2,13 @@
 using {API_SALES_ORDER_SRV as so} from './external/API_SALES_ORDER_SRV.csn';
 
 service SalesService {
-    entity A_SalesOrder              as projection on so.A_SalesOrder {
+
+    //@odata.draft.enabled
+  
+    // entity A_SalesOrder: so.A_SalesOrder{        
+    //         criticality : Integer
+    // }
+    entity A_SalesOrder as projection on so.A_SalesOrder {
         key SalesOrder,
             SalesOrderType,
             SalesOrganization,
@@ -15,16 +21,15 @@ service SalesService {
             SalesOrderDate,
             TotalNetAmount,
             ShippingType,
-            //to_Item    : Association to so.A_SalesOrder,
-            to_Item   : redirected to A_SalesOrderItem,
-            to_Partner : redirected to A_SalesOrderHeaderPartner
-    }
+            //criticality,
+            to_Item    : redirected to A_SalesOrderItem,
+            to_Partner : redirected to A_SalesOrderHeaderPartner,            
+    }    
+
     //@odata.draft.enabled
     entity A_SalesOrderItem          as projection on so.A_SalesOrderItem {
         key SalesOrder,
-            key SalesOrderItem,
-            //SalesOrderItem : Association to many A_SalesOrder
-            //                     on SalesOrderItem.to_Item = $self,
+        key SalesOrderItem,
             SalesOrderItemCategory,
             PurchaseOrderByCustomer,
             Material,
