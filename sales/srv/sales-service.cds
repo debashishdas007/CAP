@@ -4,27 +4,27 @@ using {API_SALES_ORDER_SRV as so} from './external/API_SALES_ORDER_SRV.csn';
 service SalesService {
 
     //@odata.draft.enabled
-  
-    // entity A_SalesOrder: so.A_SalesOrder{        
-    //         criticality : Integer
-    // }
-    entity A_SalesOrder as projection on so.A_SalesOrder {
-        key SalesOrder,
-            SalesOrderType,
-            SalesOrganization,
-            DistributionChannel,
-            SalesGroup,
-            SalesDistrict,
-            SoldToParty,
-            CreationDate,
-            CreatedByUser,
-            SalesOrderDate,
-            TotalNetAmount,
-            ShippingType,
+    // entity A_SalesOrder : so.A_SalesOrder {
+    //     criticality : Integer
+    // } 
+
+    entity A_SalesOrder              as projection on so.A_SalesOrder {
+        key SalesOrder          as SalesOrder,
+            SalesOrderType      as SalesOrderType,
+            SalesOrganization   as SalesOrganization,
+            DistributionChannel as DistributionChannel,
+            SalesGroup          as SalesGroup,
+            SalesDistrict       as SalesDistrict,
+            SoldToParty         as SoldToParty,
+            CreationDate        as CreationDate,
+            CreatedByUser       as CreatedByUser,
+            SalesOrderDate      as SalesOrderDate,
+            TotalNetAmount      as TotalNetAmount,
+            ShippingType        as ShippingType,
             //criticality,
-            to_Item    : redirected to A_SalesOrderItem,
-            to_Partner : redirected to A_SalesOrderHeaderPartner,            
-    }    
+            to_Item             as to_Item    : redirected to A_SalesOrderItem,
+            to_Partner          as to_Partner : redirected to A_SalesOrderHeaderPartner,
+    }
 
     //@odata.draft.enabled
     entity A_SalesOrderItem          as projection on so.A_SalesOrderItem {

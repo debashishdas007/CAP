@@ -10,15 +10,16 @@ module.exports = cds.service.impl(async function() {
     //     return bp.run(req.query);       
     // });
 
-    this.on('READ', ['A_SalesOrder','A_SalesOrderItem', 'A_SalesOrderHeaderPartner'], req => {
+    this.on('READ', ['A_SalesOrder','A_SalesOrderItem', 'A_SalesOrderHeaderPartner'], async req => {
         console.log("ON Read "+ req.query);
         console.log("ON Read "+ req);
         
         return bp.run(req.query);
     });
 
-    this.before('READ', 'A_SalesOrder', req => {
-        console.log("Before Read "+ req);
+    this.before('READ', 'A_SalesOrder', req => {        
+        //console.log("Before Read "+ req.data.criticality);
+        //delete req.data.criticality;
     });
     // this.after('READ', 'A_SalesOrder', req => {
     //     console.log(req);
