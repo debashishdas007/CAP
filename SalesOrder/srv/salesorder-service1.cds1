@@ -1,0 +1,8 @@
+using { API_SALES_ORDER_SRV as SO  } from './external/API_SALES_ORDER_SRV.csn';
+
+service SalesOrderService {
+    //entity A_SalesOrder as projection on SO.A_SalesOrder; // excluding { SoldToParty };    
+    /*entity A_SalesOrderItem as projection on SO.A_SalesOrderItem;
+    entity A_SalesOrderPartnerAddress as projection on SO.A_SalesOrderPartnerAddress;
+    entity A_SalesOrderItemPartner as projection on SO.A_SalesOrderItemPartner;*/
+}
