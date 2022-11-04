@@ -2,8 +2,12 @@ const cds = require('@sap/cds');
 const { A_SalesOrder } = cds.entities
 
 module.exports = cds.service.impl (srv =>{
-    srv.after("READ", 'A_SalesOrder', each => each.TotalNetAmount > 50 && _addDiscount(each,1))
-    
+    srv.after("READ", 'A_SalesOrder', each => each.TotalNetAmount > 50 && _addDiscount(each,1))    
+
+    // srv.on("CREATE", 'A_SalesOrder', async req => {
+
+    // });
+
 })
 
 function _addDiscount(each,discount){

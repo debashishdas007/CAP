@@ -1,0 +1,13 @@
+
+//Get Sales Order
+GET http://localhost:4004/api-sales-order-srv/A_SalesOrder
+
+### Submit Request
+
+POST  http://localhost:4004/api-sales-order-srv/A_SalesOrder
+Content-Type: application/json
+
+{
+    "SalesOrder" : "101",
+    "SalesOrderType": "DB"
+}
