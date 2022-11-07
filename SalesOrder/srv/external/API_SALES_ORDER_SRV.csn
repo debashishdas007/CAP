@@ -13,7 +13,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrder": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.content.version": "1",
       "@sap.label": "Sales Order Header",
       "elements": {
@@ -673,7 +673,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderBillingPlan": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.creatable": "false",
       "@sap.deletable": "false",
       "@sap.content.version": "1",
@@ -781,7 +781,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderBillingPlanItem": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.content.version": "1",
       "@sap.label": "Header Billing Plan Item",
       "elements": {
@@ -979,7 +979,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderHeaderPartner": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.content.version": "1",
       "@sap.label": "Header Partner",
       "elements": {
@@ -1058,7 +1058,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderHeaderPrElement": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.content.version": "1",
       "@sap.label": "Header Pricing Element",
       "elements": {
@@ -1409,7 +1409,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderItem": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.content.version": "1",
       "@sap.label": "Sales Order Item",
       "elements": {
@@ -2130,7 +2130,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderItemBillingPlan": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.creatable": "false",
       "@sap.deletable": "false",
       "@sap.content.version": "1",
@@ -2260,7 +2260,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderItemPartner": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.content.version": "1",
       "@sap.label": "Item Partner",
       "elements": {
@@ -2355,7 +2355,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderItemPartnerAddress": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.creatable": "false",
       "@sap.deletable": "false",
       "@sap.content.version": "1",
@@ -2600,7 +2600,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderItemPrElement": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.content.version": "1",
       "@sap.label": "Item Pricing Element",
       "elements": {
@@ -2984,7 +2984,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderItemRelatedObject": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.updatable": "false",
       "@sap.content.version": "1",
       "@sap.label": "Item Related Object",
@@ -3059,7 +3059,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderItemText": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.content.version": "1",
       "@sap.label": "Item Text",
       "elements": {
@@ -3118,7 +3118,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderItmPrecdgProcFlow": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.creatable": "false",
       "@sap.updatable": "false",
       "@sap.deletable": "false",
@@ -3242,7 +3242,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderItmSubsqntProcFlow": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.creatable": "false",
       "@sap.updatable": "false",
       "@sap.deletable": "false",
@@ -3386,7 +3386,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderPartnerAddress": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.creatable": "false",
       "@sap.deletable": "false",
       "@sap.content.version": "1",
@@ -3617,7 +3617,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderPrecdgProcFlow": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.creatable": "false",
       "@sap.updatable": "false",
       "@sap.deletable": "false",
@@ -3694,7 +3694,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderRelatedObject": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.updatable": "false",
       "@sap.content.version": "1",
       "@sap.label": "Header Related Object",
@@ -3753,7 +3753,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderScheduleLine": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.content.version": "1",
       "@sap.label": "Item Schedule Line",
       "elements": {
@@ -3863,7 +3863,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderSubsqntProcFlow": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.creatable": "false",
       "@sap.updatable": "false",
       "@sap.deletable": "false",
@@ -3940,7 +3940,7 @@
     },
     "API_SALES_ORDER_SRV.A_SalesOrderText": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.content.version": "1",
       "@sap.label": "Header Text",
       "elements": {
@@ -3983,7 +3983,7 @@
     },
     "API_SALES_ORDER_SRV.A_SlsOrderItemBillingPlanItem": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.content.version": "1",
       "@sap.label": "Item Billing Plan Item",
       "elements": {
@@ -4197,7 +4197,7 @@
     },
     "API_SALES_ORDER_SRV.A_SlsOrdPaymentPlanItemDetails": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+      "@cds.persistence.skip": false,
       "@sap.content.version": "1",
       "@sap.label": "Header Payment Plan",
       "elements": {

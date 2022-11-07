@@ -1,1 +1,9 @@
-{}
+{
+    "build": {
+        "target": "gen",
+        "tasks": [
+            { "src": "db", "for": "hana",  "options": { "model":["db","srv/external/API_SALES_ORDER_SRV.csn"]  }},
+            { "for": "nodejs", "src": "srv", "options": {"model": ["db","srv/external/API_SALES_ORDER_SRV.csn"] } }
+        ]
+    }
+}

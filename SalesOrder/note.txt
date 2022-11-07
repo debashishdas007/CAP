@@ -1,0 +1,2 @@
+1. Put "@cds.persistence.skip": false, to make hdbcds file in gen folder.
+2. Link to the Model for Build. in .cdsrc.json file 
