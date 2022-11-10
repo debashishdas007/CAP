@@ -1,4 +1,4 @@
-"SalesOrder";"PartnerFunction";"Customer";"Supplier";"AddressID"
+SalesOrder;PartnerFunction;Customer;Supplier;AddressID
 "1";"SP";"17100001";"";"22900"
 "1";"BP";"17100001";"";"22900"
 "1";"PY";"17100001";"";"22900"

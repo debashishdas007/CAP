@@ -6,8 +6,9 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap-cloud-sdk/http-client": "^2.9.0",
+    "@sap-cloud-sdk/http-client": "^2.10.0",
     "@sap/cds": "^6.3.1",
+    "@sap/hdi-deploy": "^4.5.1",
     "express": "^4",
     "hdb": "^0.19.0",
     "sqlite": "^4.1.2"
@@ -47,10 +48,21 @@
     }
   },
   "cds": {
+    "hana": {
+      "deploy-format": "hdbtable"
+    },
     "requires": {
       "API_SALES_ORDER_SRV": {
         "kind": "odata-v2",
         "model": "srv/external/API_SALES_ORDER_SRV"
+      },
+      "[hybrid]": {
+        "db": {
+          "kind": "hana-cloud"
+        }
+      },
+      "db": {
+        "kind": "sql"
       }
     }
   }

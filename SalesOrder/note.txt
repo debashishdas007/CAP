@@ -1,2 +1,22 @@
 1. Put "@cds.persistence.skip": false, to make hdbcds file in gen folder.
 2. Link to the Model for Build. in .cdsrc.json file 
+3. for deployment issue - 
+        "cds": {
+            "hana": {
+            "deploy-format": "hdbtable"
+            },
+            "requires": {
+            "API_SALES_ORDER_SRV": {
+                "kind": "odata-v2",
+                "model": "srv/external/API_SALES_ORDER_SRV"
+            },
+            "[hybrid]": {
+                "db": {
+                "kind": "hana-cloud"
+                }
+            },
+            "db": {
+                "kind": "sql"
+            }
+            }
+        }
